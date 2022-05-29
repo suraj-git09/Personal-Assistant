@@ -1,6 +1,4 @@
 
-from asyncio.windows_events import NULL
-from logging import exception
 import pyttsx3
 import webbrowser
 import smtplib
