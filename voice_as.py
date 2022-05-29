@@ -9,7 +9,6 @@ import speech_recognition as sr
 import wikipedia
 import datetime
 import wolframalpha
-import os
 import sys
 import pyautogui as py
 import time
