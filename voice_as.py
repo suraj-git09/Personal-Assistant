@@ -13,7 +13,6 @@ import time
 import json
 import requests
 from pygame import mixer
-import os
 
 
 def music_on_loop(file,):
@@ -54,7 +53,7 @@ def greetMe():
 
 greetMe()
 
-speak('Hello !')
+speak('I am Luis! your digital voice Assistant!')
 speak('How may I help you?')
 
 
@@ -71,7 +70,7 @@ def myCommand():
         print('User: ' + query + '\n')
         
     except sr.UnknownValueError:
-        speak('Sorry sir! I didn\'t get that! Try typing the command!')
+        speak('Sorry! I didn\'t get that! Try typing the command!')
         query = str(input('Command: '))
 
     return query
@@ -106,7 +105,7 @@ if __name__ == '__main__':
         elif 'kiss' in  query:
             music_on_loop('kiss.wav')
             time.sleep(1.2)
-            pass
+        
             
 
         elif 'email' in query:
@@ -128,7 +127,7 @@ if __name__ == '__main__':
         
 
                 except:
-                    speak('Sorry Sir! I am unable to send your message at this moment!')
+                    speak('Sorry! I am unable to send your message at this moment!')
         elif 'spotify'  in query or 'play music' in  query or 'song' in query:
             webbrowser.open("C:/Users/rajsu/OneDrive/Desktop/Spotify.lnk")
             time.sleep(3)
@@ -156,10 +155,10 @@ if __name__ == '__main__':
             sys.exit()
            
         elif 'hello' in query:
-            speak('Hello Sir')
+            speak('Hello Buddy')
 
         elif 'bye' in query:
-            speak('Bye Sir, have a good day.')
+            speak('Bye, have a good day.')
             sys.exit()
                                     
         # elif 'play music' in query:
@@ -191,5 +190,5 @@ if __name__ == '__main__':
             except:
                 webbrowser.open('www.google.com')
         
-        speak('Next Command! Sir!')
+        speak('Next Command! Buddy!')
         
